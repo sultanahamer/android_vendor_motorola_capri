@@ -5,6 +5,14 @@
 PRODUCT_SOONG_NAMESPACES += \
     vendor/motorola/capri
 
+# TODO: Removed these vintf files. Should add these as variables later. Else stuff wont work for ROM
+
+    # vendor/motorola/capri/proprietary/vendor/odm/etc/vintf/manifest_b.xml:$(TARGET_COPY_OUT_ODM)/etc/vintf/manifest_b.xml \
+    # vendor/motorola/capri/proprietary/vendor/odm/etc/vintf/manifest_d.xml:$(TARGET_COPY_OUT_ODM)/etc/vintf/manifest_d.xml \
+    # vendor/motorola/capri/proprietary/vendor/odm/etc/vintf/manifest_dn.xml:$(TARGET_COPY_OUT_ODM)/etc/vintf/manifest_dn.xml \
+    # vendor/motorola/capri/proprietary/vendor/odm/etc/vintf/manifest_f.xml:$(TARGET_COPY_OUT_ODM)/etc/vintf/manifest_f.xml \
+    # vendor/motorola/capri/proprietary/vendor/odm/etc/vintf/manifest_n.xml:$(TARGET_COPY_OUT_ODM)/etc/vintf/manifest_n.xml \
+    
 PRODUCT_COPY_FILES += \
     vendor/motorola/capri/proprietary/etc/audio_effects.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/audio_effects.conf \
     vendor/motorola/capri/proprietary/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/libnfc-nci.conf \
@@ -21,11 +29,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/capri/proprietary/lib64/libstagefright_framecapture_utils.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libstagefright_framecapture_utils.so \
     vendor/motorola/capri/proprietary/lib64/vendor.qti.hardware.wifi.keystore@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.qti.hardware.wifi.keystore@1.0.so \
     vendor/motorola/capri/proprietary/vendor/odm/etc/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_ODM)/etc/media_profiles_V1_0.xml \
-    vendor/motorola/capri/proprietary/vendor/odm/etc/vintf/manifest_b.xml:$(TARGET_COPY_OUT_ODM)/etc/vintf/manifest_b.xml \
-    vendor/motorola/capri/proprietary/vendor/odm/etc/vintf/manifest_d.xml:$(TARGET_COPY_OUT_ODM)/etc/vintf/manifest_d.xml \
-    vendor/motorola/capri/proprietary/vendor/odm/etc/vintf/manifest_dn.xml:$(TARGET_COPY_OUT_ODM)/etc/vintf/manifest_dn.xml \
-    vendor/motorola/capri/proprietary/vendor/odm/etc/vintf/manifest_f.xml:$(TARGET_COPY_OUT_ODM)/etc/vintf/manifest_f.xml \
-    vendor/motorola/capri/proprietary/vendor/odm/etc/vintf/manifest_n.xml:$(TARGET_COPY_OUT_ODM)/etc/vintf/manifest_n.xml \
     vendor/motorola/capri/proprietary/system_ext/bin/dpmd:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/dpmd \
     vendor/motorola/capri/proprietary/system_ext/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/dpm/dpm.conf \
     vendor/motorola/capri/proprietary/system_ext/etc/init/dpmd.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/dpmd.rc \
