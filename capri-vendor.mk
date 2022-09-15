@@ -12,7 +12,25 @@ PRODUCT_SOONG_NAMESPACES += \
     # vendor/motorola/capri/proprietary/vendor/odm/etc/vintf/manifest_dn.xml:$(TARGET_COPY_OUT_ODM)/etc/vintf/manifest_dn.xml \
     # vendor/motorola/capri/proprietary/vendor/odm/etc/vintf/manifest_f.xml:$(TARGET_COPY_OUT_ODM)/etc/vintf/manifest_f.xml \
     # vendor/motorola/capri/proprietary/vendor/odm/etc/vintf/manifest_n.xml:$(TARGET_COPY_OUT_ODM)/etc/vintf/manifest_n.xml \
+    #
+   # TODO:  we need to create the below symlinks from /system_ext/lib64
+   # vendor/motorola/capri/proprietary/system_ext/priv-app/ims/lib/arm64/libimscamera_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/ims/lib/arm64/libimscamera_jni.so \
+   # vendor/motorola/capri/proprietary/system_ext/priv-app/ims/lib/arm64/libimsmedia_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/ims/lib/arm64/libimsmedia_jni.so \
+   # vendor/motorola/capri/proprietary/vendor/app/CneApp/lib/arm64/libvndfwk_detect_jni.qti.so:$(TARGET_COPY_OUT_VENDOR)/app/CneApp/lib/arm64/libvndfwk_detect_jni.qti.so \
+
+   # TODO: 
+   # Below file symlink of /vendor/etc/wifi/filename
+   # vendor/motorola/capri/proprietary/vendor/firmware/wlan/qca_cld/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/qca_cld/WCNSS_qcom_cfg.ini \
+   # TODO: IMPORTANT Below file symlink of /mnt/vendor/persist/wlan_mac.bin
+   # vendor/motorola/capri/proprietary/vendor/firmware/wlan/qca_cld/wlan_mac.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/qca_cld/wlan_mac.bin \
+
+   # TODO: Need to make these common symlinks, to file /vendor/bin/toolbox 
+   # vendor/motorola/capri/proprietary/vendor/bin/getfattr:$(TARGET_COPY_OUT_VENDOR)/bin/getfattr \
     
+   
+# TODO: This has seem to be already compiled by system so ignoring it
+# vendor/motorola/capri/proprietary/system_ext/lib64/libvndfwk_detect_jni.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libvndfwk_detect_jni.qti.so \
+
 PRODUCT_COPY_FILES += \
     vendor/motorola/capri/proprietary/etc/audio_effects.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/audio_effects.conf \
     vendor/motorola/capri/proprietary/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/libnfc-nci.conf \
@@ -231,9 +249,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/capri/proprietary/system_ext/lib64/vendor.qti.imsrtpservice@3.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.imsrtpservice@3.0.so \
     vendor/motorola/capri/proprietary/system_ext/lib64/vendor.qti.latency@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.latency@2.0.so \
     vendor/motorola/capri/proprietary/system_ext/lib64/vendor.qti.qspmhal@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.qspmhal@1.0.so \
-    vendor/motorola/capri/proprietary/system_ext/priv-app/ims/lib/arm64/libimscamera_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/ims/lib/arm64/libimscamera_jni.so \
-    vendor/motorola/capri/proprietary/system_ext/priv-app/ims/lib/arm64/libimsmedia_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/ims/lib/arm64/libimsmedia_jni.so \
-    vendor/motorola/capri/proprietary/vendor/app/CneApp/lib/arm64/libvndfwk_detect_jni.qti.so:$(TARGET_COPY_OUT_VENDOR)/app/CneApp/lib/arm64/libvndfwk_detect_jni.qti.so \
+    vendor/motorola/capri/proprietary/system_ext/lib64/libimscamera_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libimscamera_jni.so \
+    vendor/motorola/capri/proprietary/system_ext/lib64/libimsmedia_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libimsmedia_jni.so \
     vendor/motorola/capri/proprietary/vendor/bin/ATFWD-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ATFWD-daemon \
     vendor/motorola/capri/proprietary/vendor/bin/KmInstallKeybox:$(TARGET_COPY_OUT_VENDOR)/bin/KmInstallKeybox \
     vendor/motorola/capri/proprietary/vendor/bin/KmValidateKeybox:$(TARGET_COPY_OUT_VENDOR)/bin/KmValidateKeybox \
@@ -915,8 +932,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/capri/proprietary/vendor/firmware/scuba_ipa_fws.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/scuba_ipa_fws.b04 \
     vendor/motorola/capri/proprietary/vendor/firmware/scuba_ipa_fws.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/scuba_ipa_fws.elf \
     vendor/motorola/capri/proprietary/vendor/firmware/scuba_ipa_fws.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/scuba_ipa_fws.mdt \
-    vendor/motorola/capri/proprietary/vendor/firmware/wlan/qca_cld/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/qca_cld/WCNSS_qcom_cfg.ini \
-    vendor/motorola/capri/proprietary/vendor/firmware/wlan/qca_cld/wlan_mac.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/qca_cld/wlan_mac.bin \
     vendor/motorola/capri/proprietary/vendor/lib/btaudio_offload_if.so:$(TARGET_COPY_OUT_VENDOR)/lib/btaudio_offload_if.so \
     vendor/motorola/capri/proprietary/vendor/lib/camera/com.mot.eeprom.mot_capri_s5k4h7_front_otp.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.mot.eeprom.mot_capri_s5k4h7_front_otp.so \
     vendor/motorola/capri/proprietary/vendor/lib/camera/com.mot.eeprom.mot_capri_s5k4h7_otp.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.mot.eeprom.mot_capri_s5k4h7_otp.so \
