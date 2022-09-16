@@ -2036,6 +2036,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/capri/proprietary/vendor/lib64/motorola.hardware.camera.imgtuner@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/motorola.hardware.camera.imgtuner@1.0.so \
     vendor/motorola/capri/proprietary/vendor/lib64/motorola.hardware.fdrcontrol@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/motorola.hardware.fdrcontrol@1.0.so \
     vendor/motorola/capri/proprietary/vendor/lib64/motorola.hardware.fdrcontrol@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/motorola.hardware.fdrcontrol@1.1.so \
+    vendor/motorola/capri/proprietary/vendor/lib64/motorola.hardware.fdrcontrol@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/motorola.hardware.fdrcontrol@1.2.so \
     vendor/motorola/capri/proprietary/vendor/lib64/motorola.hardware.fmradio@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/motorola.hardware.fmradio@1.0.so \
     vendor/motorola/capri/proprietary/vendor/lib64/motorola.hardware.health@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/motorola.hardware.health@2.0.so \
     vendor/motorola/capri/proprietary/vendor/lib64/motorola.hardware.input@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/motorola.hardware.input@1.0.so \
@@ -2181,6 +2182,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/capri/proprietary/vendor/radio/qcril_database/upgrade/20_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/20_version_qcrildb.sql \
     vendor/motorola/capri/proprietary/vendor/radio/qcril_database/upgrade/21_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/21_version_qcrildb.sql \
     vendor/motorola/capri/proprietary/vendor/radio/qcril_database/upgrade/22_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/22_version_qcrildb.sql \
+    vendor/motorola/capri/proprietary/vendor/radio/qcril_database/upgrade/24_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/24_version_qcrildb.sql \
     vendor/motorola/capri/proprietary/vendor/radio/qcril_database/upgrade/3_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/3_version_qcrildb.sql \
     vendor/motorola/capri/proprietary/vendor/radio/qcril_database/upgrade/4_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/4_version_qcrildb.sql \
     vendor/motorola/capri/proprietary/vendor/radio/qcril_database/upgrade/5_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/5_version_qcrildb.sql \
